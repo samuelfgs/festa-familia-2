@@ -1,0 +1,28 @@
+{
+  "name": "pedidos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@plasmicapp/cli": "^0.1.304",
+    "@plasmicapp/react-web": "^0.2.245",
+    "@plasmicpkgs/antd5": "^0.0.104",
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.6.0",
+    "swr": "^2.2.1",
+    "typescript": "5.1.6",
+    "use-previous": "^1.2.0"
+  }
+}

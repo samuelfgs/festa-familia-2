@@ -1,0 +1,290 @@
+.root {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  background: #ed474763;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+  padding: 0px;
+}
+:where(.root > *) {
+  grid-column: 4;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  :where(.root > *) {
+    grid-column: 4;
+  }
+}
+.freeBox__aIbKi {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #00000012;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 8px 8px 46px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 80vh;
+  width: 80vh;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 30px solid #4c4c4c;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox___5Oyht {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  justify-self: flex-start;
+  background: #ffffff80;
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 8px;
+}
+.text__hazpa {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: "Coda";
+  color: #f94f4f;
+  min-width: 0;
+}
+.freeBox__qw3As {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.text__kkq5L {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 40px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: "Coda";
+  color: #535353;
+  min-width: 0;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__pRnrw {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__y8IMt {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 20px;
+}
+.freeBox__p7Cb1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ffffff91;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__p7Cb1 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.freeBox__p7Cb1 > :global(.__wab_flex-container) > *,
+.freeBox__p7Cb1 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__p7Cb1 > :global(.__wab_flex-container) > picture > img,
+.freeBox__p7Cb1
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.text__eo4Gi {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  font-size: 50px;
+  min-width: 0;
+}
+.text__k1Qct {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  font-size: 50px;
+  min-width: 0;
+}
+.freeBox__qk9Ls {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.freeBox__yiQYu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background: #ffffffab;
+  padding: 30px;
+}
+.freeBox__yiQYu > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 30px);
+  height: calc(100% + 30px);
+}
+.freeBox__yiQYu > :global(.__wab_flex-container) > *,
+.freeBox__yiQYu > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__yiQYu > :global(.__wab_flex-container) > picture > img,
+.freeBox__yiQYu
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 30px;
+}
+.text__nOfxM {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 60px;
+  text-align: center;
+  text-decoration-line: none;
+  font-family: "Coda";
+  color: #535353;
+  min-width: 0;
+}
+.freeBox__vGeby {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__vGeby > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.freeBox__vGeby > :global(.__wab_flex-container) > *,
+.freeBox__vGeby > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__vGeby > :global(.__wab_flex-container) > picture > img,
+.freeBox__vGeby
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.text__zK2AE {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 70px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: "Coda";
+  color: #535353;
+  min-width: 0;
+}
+.text__ymvUa {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 70px;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: "Coda";
+  color: #535353;
+  min-width: 0;
+}
