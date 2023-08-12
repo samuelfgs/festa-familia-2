@@ -107,7 +107,7 @@ function PlasmicHomepage__RenderFunc(props: {
             { id: 3, name: "A", barraca: "B" }
           ],
           newOrder: [],
-          testOrders: false,
+          testOrders: true,
           testNewOrder: false
         },
         props.args
@@ -258,7 +258,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           {(
                             (() => {
                               try {
-                                return $props.orders.flatMap(ord => [ord, ord]);
+                                return $props.orders;
                               } catch (e) {
                                 if (
                                   e instanceof TypeError ||
