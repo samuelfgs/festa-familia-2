@@ -234,15 +234,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qw3As)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kkq5L
-                      )}
-                    >
-                      {"PEDIDOS PRONTOS"}
-                    </div>
                     {true ? (
                       <div
                         data-plasmic-name={"grid"}
