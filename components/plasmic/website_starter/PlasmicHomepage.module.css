@@ -77,8 +77,8 @@
 .img__z8R6M {
   object-fit: cover;
   max-width: 100%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   flex-shrink: 0;
 }
 .img__z8R6M > picture > img {
@@ -100,7 +100,7 @@
   top: auto;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 18px 130px 8px 8px;
+  padding: 0px 130px 8px 8px;
 }
 .freeBox__hanpu {
   display: flex;
@@ -115,21 +115,20 @@
   left: auto;
   min-width: 0;
   min-height: 0;
-  padding: 8px 71px 8px 0px;
+  padding: 0px 71px 8px 0px;
 }
 .text__hazpa {
-  width: 100%;
+  width: 1746px;
   height: auto;
   max-width: 100%;
-  font-size: 50px;
-  text-align: left;
+  font-size: 80px;
+  text-align: center;
   text-decoration-line: underline;
   font-family: "Cherry Cream Soda";
   color: #442e18;
-  padding-right: 353px;
-  padding-left: 802px;
+  padding-right: 0px;
+  padding-left: 449px;
   padding-top: 0px;
-  min-width: 0;
   display: block;
 }
 .freeBox___5Oyht {
@@ -168,12 +167,12 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 40px;
+  font-size: 80px;
   text-align: left;
   text-decoration-line: underline;
   font-family: "Coda";
   color: #facfa3;
-  padding-left: 966px;
+  padding-left: 801px;
   min-width: 0;
 }
 .grid {
@@ -241,7 +240,7 @@
   height: auto;
   max-width: 100%;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   min-width: 0;
 }
 .text__k1Qct {
@@ -249,7 +248,7 @@
   height: auto;
   max-width: 100%;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   min-width: 0;
 }
 .freeBox__qk9Ls {

@@ -53,11 +53,15 @@ export const PlasmicHomepage__VariantProps = new Array<VariantPropType>();
 export type PlasmicHomepage__ArgsType = {
   orders?: any;
   newOrder?: any;
+  testOrders?: boolean;
+  testNewOrder?: boolean;
 };
 type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>(
   "orders",
-  "newOrder"
+  "newOrder",
+  "testOrders",
+  "testNewOrder"
 );
 
 export type PlasmicHomepage__OverridesType = {
@@ -102,7 +106,9 @@ function PlasmicHomepage__RenderFunc(props: {
             { id: 2, name: "A", barraca: "B" },
             { id: 3, name: "A", barraca: "B" }
           ],
-          newOrder: []
+          newOrder: [],
+          testOrders: true,
+          testNewOrder: false
         },
         props.args
       ),
@@ -171,12 +177,12 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__z8R6M)}
-                    displayHeight={"150px" as const}
+                    displayHeight={"250px" as const}
                     displayMaxHeight={"none" as const}
                     displayMaxWidth={"100%" as const}
                     displayMinHeight={"0" as const}
                     displayMinWidth={"0" as const}
-                    displayWidth={"150px" as const}
+                    displayWidth={"250px" as const}
                     loading={"lazy" as const}
                     src={{
                       src: "/plasmic/website_starter/images/isvpng.png",
@@ -202,7 +208,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             "title" as const
                           )}
                         >
-                          {"ARRAIAL DA FAM\u00cdLIA"}
+                          {"ARRAIAL \nDA FAM\u00cdLIA"}
                         </div>
                       ) : null}
                     </div>
@@ -212,7 +218,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox___5Oyht)}>
                 {(() => {
                   try {
-                    return !$props.newOrder;
+                    return $props.testOrders || !$props.newOrder;
                   } catch (e) {
                     if (
                       e instanceof TypeError ||
@@ -348,19 +354,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     ) : null}
                   </div>
                 ) : null}
-                {(() => {
-                  try {
-                    return !!$props.newOrder;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return true;
-                    }
-                    throw e;
-                  }
-                })() ? (
+                {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qk9Ls)}
                   >
