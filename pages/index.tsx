@@ -28,6 +28,7 @@ function Homepage() {
         });
         console.log("put");
         mutate();
+        mutateNewOrders();
       }, 5000)
     }
   }, [newOrders]);

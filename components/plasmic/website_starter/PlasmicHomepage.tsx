@@ -167,6 +167,27 @@ function PlasmicHomepage__RenderFunc(props: {
               />
 
               {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__caBq2)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__z8R6M)}
+                    displayHeight={"150px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"150px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/website_starter/images/isvpng.png",
+                      fullWidth: 1080,
+                      fullHeight: 1080,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
+              {true ? (
                 <div className={classNames(projectcss.all, sty.freeBox__lrIjt)}>
                   {true ? (
                     <div
@@ -186,45 +207,10 @@ function PlasmicHomepage__RenderFunc(props: {
                       ) : null}
                     </div>
                   ) : null}
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__caBq2)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__z8R6M)}
-                        displayHeight={"150px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"150px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/website_starter/images/isvpng.png",
-                          fullWidth: 1080,
-                          fullHeight: 1080,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  ) : null}
                 </div>
               ) : null}
               <div className={classNames(projectcss.all, sty.freeBox___5Oyht)}>
-                {(() => {
-                  try {
-                    return !$props.newOrder;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return true;
-                    }
-                    throw e;
-                  }
-                })() ? (
+                {true ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qw3As)}
                   >
@@ -350,19 +336,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     ) : null}
                   </div>
                 ) : null}
-                {(() => {
-                  try {
-                    return !!$props.newOrder;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return true;
-                    }
-                    throw e;
-                  }
-                })() ? (
+                {true ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qk9Ls)}
                   >
