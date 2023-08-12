@@ -337,7 +337,7 @@
   max-width: 100%;
   font-size: 150px;
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration-line: none;
   font-family: "Coda";
   color: #535353;
   min-width: 0;
@@ -348,7 +348,7 @@
   max-width: 100%;
   font-size: 120px;
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration-line: none;
   font-family: "Coda";
   color: #535353;
   min-width: 0;

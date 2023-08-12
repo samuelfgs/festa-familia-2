@@ -107,7 +107,7 @@ function PlasmicHomepage__RenderFunc(props: {
             { id: 3, name: "A", barraca: "B" }
           ],
           newOrder: [],
-          testOrders: true,
+          testOrders: false,
           testNewOrder: false
         },
         props.args
