@@ -20,7 +20,6 @@ function Homepage() {
       refreshInterval: 5000
     }
   )
-  console.log("dale", data, newOrders);
   React.useEffect(() => {
     if (newOrders?.length > 0) {
       setTimeout(async () => {
@@ -42,8 +41,10 @@ function Homepage() {
         grid={{
           render(props, Comp) {
             return (
-              <marquee width="100%" direction="up" height="100%">
+              // @ts-ignore
+              <marquee width="100%" direction="up" height="100%" scrollamount={4}>
                 <Comp {...props} />
+              { /* @ts-ignore */}
               </marquee>
             )
           }
