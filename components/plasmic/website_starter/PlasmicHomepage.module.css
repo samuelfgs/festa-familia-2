@@ -278,8 +278,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: calc(0px - 30px);
-  height: calc(100% + 30px);
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
 }
 .freeBox__yiQYu > :global(.__wab_flex-container) > *,
 .freeBox__yiQYu > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -289,13 +289,13 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .text__nOfxM {
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 60px;
+  font-size: 120px;
   text-align: center;
   text-decoration-line: none;
   font-family: "Coda";
@@ -334,7 +334,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 70px;
+  font-size: 150px;
   text-align: center;
   text-decoration-line: underline;
   font-family: "Coda";
@@ -345,7 +345,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 70px;
+  font-size: 120px;
   text-align: center;
   text-decoration-line: underline;
   font-family: "Coda";

@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 let orders: any[] = [];
 
 orders = [
-  ...new Array(10).keys()
+  ...new Array(2).keys()
 ].map((x) => ({
   id: x,
   name: `ABC ${x+1}`,
