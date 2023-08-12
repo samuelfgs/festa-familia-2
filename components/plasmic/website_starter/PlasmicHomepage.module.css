@@ -121,11 +121,11 @@
   width: 1746px;
   height: auto;
   max-width: 100%;
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
   text-decoration-line: underline;
   font-family: "Cherry Cream Soda";
-  color: #442e18;
+  color: #facfa3;
   padding-right: 0px;
   padding-left: 449px;
   padding-top: 0px;
@@ -167,12 +167,12 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 80px;
+  font-size: 100px;
   text-align: left;
   text-decoration-line: underline;
   font-family: "Coda";
   color: #facfa3;
-  padding-left: 801px;
+  padding-left: 689px;
   min-width: 0;
 }
 .grid {
