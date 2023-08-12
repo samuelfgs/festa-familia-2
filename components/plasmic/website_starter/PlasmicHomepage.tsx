@@ -202,7 +202,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             "title" as const
                           )}
                         >
-                          {"ARRAIAL \nDA FAM\u00cdLIA"}
+                          {"ARRAIAL DA FAM\u00cdLIA"}
                         </div>
                       ) : null}
                     </div>
@@ -210,7 +210,19 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
               ) : null}
               <div className={classNames(projectcss.all, sty.freeBox___5Oyht)}>
-                {true ? (
+                {(() => {
+                  try {
+                    return !$props.newOrder;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })() ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qw3As)}
                   >
@@ -336,7 +348,19 @@ function PlasmicHomepage__RenderFunc(props: {
                     ) : null}
                   </div>
                 ) : null}
-                {true ? (
+                {(() => {
+                  try {
+                    return !!$props.newOrder;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })() ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qk9Ls)}
                   >
