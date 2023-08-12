@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import fs from "fs";
 
 let orders: any[] = [];
 
@@ -33,7 +34,7 @@ export default function handler(
     res.status(200).json({});
   } else if (req.method === "POST") {
     const { name, barraca } = JSON.parse(req.body);
-    newOrders.push(
+    orders.push(
       { id: ++nextId, name, barraca }
     );
     res.status(200).json({});
