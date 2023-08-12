@@ -43,7 +43,7 @@ function Homepage() {
           render(props, Comp) {
             return (
               // @ts-ignore
-              <marquee width="100%" direction="up" height="100%" scrollamount={10}>
+              <marquee width="100%" direction="up" height="100%" scrollamount={8}>
                 <Comp {...props} />
               { /* @ts-ignore */}
               </marquee>

@@ -107,7 +107,7 @@ function PlasmicHomepage__RenderFunc(props: {
             { id: 3, name: "A", barraca: "B" }
           ],
           newOrder: [],
-          testOrders: true,
+          testOrders: false,
           testNewOrder: false
         },
         props.args
@@ -218,7 +218,9 @@ function PlasmicHomepage__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox___5Oyht)}>
                 {(() => {
                   try {
-                    return $props.testOrders || !$props.newOrder;
+                    return $props.testOrders || $props.testNewOrder
+                      ? $props.testOrders
+                      : !$props.newOrder;
                   } catch (e) {
                     if (
                       e instanceof TypeError ||
@@ -354,7 +356,21 @@ function PlasmicHomepage__RenderFunc(props: {
                     ) : null}
                   </div>
                 ) : null}
-                {false ? (
+                {(() => {
+                  try {
+                    return $props.testNewOrder || $props.testOrders
+                      ? $props.testNewOrder
+                      : !!$props.newOrder;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })() ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qk9Ls)}
                   >
