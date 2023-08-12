@@ -107,7 +107,7 @@ function PlasmicHomepage__RenderFunc(props: {
             { id: 3, name: "A", barraca: "B" }
           ],
           newOrder: [],
-          testOrders: false,
+          testOrders: true,
           testNewOrder: false
         },
         props.args
@@ -277,20 +277,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                               key={currentIndex}
                             >
-                              {(() => {
-                                try {
-                                  return [0, 3].includes(currentIndex % 4);
-                                } catch (e) {
-                                  if (
-                                    e instanceof TypeError ||
-                                    e?.plasmicType ===
-                                      "PlasmicUndefinedDataError"
-                                  ) {
-                                    return true;
-                                  }
-                                  throw e;
-                                }
-                              })() ? (
+                              {true ? (
                                 <p.Stack
                                   as={"div"}
                                   hasGap={true}

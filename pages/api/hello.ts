@@ -3,14 +3,6 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 let orders: any[] = [];
 
-orders = [
-  ...new Array(2).keys()
-].map((x) => ({
-  id: x,
-  name: `ABC ${x+1}`,
-  barraca: ["Japones", "Pastel", "Burguer"][x%3]
-}));
-
 let newOrders: any[] = [];
 
 let nextId = 1000;

@@ -188,23 +188,24 @@
   padding: 7px 8px 8px;
 }
 .freeBox__pRnrw {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
   width: 80vw;
   height: auto;
   max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
 }
 .freeBox__y8IMt {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 20px;
 }
 .freeBox__p7Cb1 {
